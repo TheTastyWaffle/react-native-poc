@@ -1,26 +1,49 @@
 {
-  "name": "react-native-poc",
-  "version": "0.1.0",
+  "name": "@winamax/betting-client",
+  "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "react-native-scripts": "1.11.1",
-    "jest-expo": "25.0.0",
-    "react-test-renderer": "16.2.0"
-  },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "description": "React Native betting client",
+  "main": "index.js",
+  "repository": "https://gitlab.dev.winamax.fr/betting-clients/betting-client.git",
+  "author": "Thomas Josso",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
   },
   "dependencies": {
-    "expo": "^25.0.0",
+    "appcenter": "^1.2.0",
+    "appcenter-analytics": "^1.2.0",
+    "appcenter-crashes": "^1.2.0",
+    "babel-preset-env": "^1.6.1",
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.53.0",
+    "react-native-code-push": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "22.2.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.17.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-flowtype": "^2.42.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "^7.6.1",
+    "eslint-plugin-react-native": "^3.2.1",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.65.0",
+    "jest": "22.2.1",
+    "prettier": "^1.10.2",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 120
   }
 }
