@@ -1,9 +1,4 @@
-# React Native Betting Client
-
-Client du paris Winamax en ligne.
-
-* Cibles: Android, iOS
-* Cibles à venir: Web
+# React Native PoC
 
 # Usage
 
